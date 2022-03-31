@@ -14,11 +14,6 @@ This one uses:
 and netcdf and kml output
 """
 
-
-
-
-
-
 import os
 
 import gnome.scripting as gs
@@ -38,7 +33,7 @@ from gnome.utilities.projections import GeoProjection
 # from gnome.maps import MapFromBNA
 
 # from gnome.model import Model
-# from gnome.spill import point_line_release_spill
+# from gnome.spills import surface_point_line_spill
 # from gnome.movers import RandomMover, WindMover, CatsMover, ComponentMover
 
 
