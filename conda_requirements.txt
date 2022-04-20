@@ -19,7 +19,7 @@ shapely
 pyproj
 mapbox_earcut # from NOAA_ORR_ERD channel -- not working
 
-setuptools>55
+setuptools>=62
 gitpython
 numpy
 scipy
