@@ -6,10 +6,6 @@ unit tests for the cache system
 designed to be run with py.test
 """
 
-
-
-
-
 import os
 
 import numpy as np
@@ -46,12 +42,12 @@ def test_cache_clear_on_delete():
     d2 = c2._cache_dir
     c3 = cache.ElementCache()
     d3 = c3._cache_dir
-    c4 = cache.ElementCache()
-    d4 = c4._cache_dir
+    # c4 = cache.ElementCache()
+    # d4 = c4._cache_dir
     assert os.path.isdir(d1)
     assert os.path.isdir(d2)
     assert os.path.isdir(d3)
-    assert os.path.isdir(d4)
+    # assert os.path.isdir(d4)
 
     del c1
     assert not os.path.isdir(d1)
@@ -62,8 +58,8 @@ def test_cache_clear_on_delete():
     del c3
     assert not os.path.isdir(d3)
 
-    del c4
-    assert not os.path.isdir(d4)
+    # del c4
+    # assert not os.path.isdir(d4)
 
 
 def test_write():
